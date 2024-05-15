@@ -100,10 +100,7 @@ if __name__ == '__main__':
 
 **Пример данных:**  
 *Input 1:* 3  
-*Output 1:*  
-```*
-**
-***```
+*Output 1:*  * ** ***  
 
 ### Код (сhristmas_tree.py)
 ```python
