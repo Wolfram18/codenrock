@@ -25,8 +25,6 @@ Yuri Gagarin 1
 
 ### Код (astronaut_sorting.py)
 ```python
-import sys
-
 def insertion_sort(array):
     for step in range(1, len(array)):
         current = step
@@ -61,7 +59,18 @@ if __name__ == "__main__":
 
 ### Код (flight_time.py)
 ```python
+def get_landing_time(h,m):
+    h = (h + 1 + (m + 48) // 60) % 24
+    m = (m + 48) % 60
+    return h, m
 
+def main():
+    time = input().split()
+    h, m = get_landing_time(int(time[0]),int(time[1]))
+    print(h, m)
+
+if __name__ == "__main__":
+    main()
 ```
 
 ## Секретные спутники
