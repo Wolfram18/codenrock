@@ -43,8 +43,8 @@ def main():
         cosmonauts.append(input().split())
     insertion_sort(cosmonauts)
     cosmonauts = [' '.join(item) for item in cosmonauts]
-    for n in range(number): 
-        print(cosmonauts[n])
+    for cosmonaut in cosmonauts: 
+        print(cosmonaut)
  
 if __name__ == "__main__":
     main()
