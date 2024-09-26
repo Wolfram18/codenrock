@@ -327,7 +327,30 @@ if __name__ == "__main__":
 
 ### Код (number-of-successes.py)
 ```python
+def get_max_success_year(data):
+    dict_success = {}
+    dict_count = {}
+    for item in data:
+        if item[0] in dict_success:
+            dict_success[item[0]] += item[1]
+            dict_count[item[0]] += 1
+        else:
+            dict_success[item[0]] = item[1]
+            dict_count[item[0]] = 1
+    for item in dict_success:
+        dict_success[item] = dict_success[item]/dict_count[item]
+    return max(dict_success, key=dict_success.get)
 
+def main():
+    number = int(input())
+    data = []
+    for _ in range(number):
+        data.append(input().split())
+    data = [[int(item[0]), int(item[1])] for item in data]
+    print(get_max_success_year(data))
+
+if __name__ == "__main__":
+    main()
 ```
 
 ## Испытания АМС «Луна-2»
@@ -344,7 +367,7 @@ if __name__ == "__main__":
 **Выходные данные:** выведите одно число - минимальную стоимость топлива для достижения Луны  
 **Пример выходных данных:** 40 (Наименьшая стоимость топлива достигается маршрутом 1 → 2 → 4).
 
-### Код (fuel-to-the-moon.py)
+### Код (luna-2-ais-testing.py)
 ```python
 
 ```
