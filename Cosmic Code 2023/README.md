@@ -303,8 +303,8 @@ def main():
     data = [[int(item[0]), int(item[1])] for item in data]
     simultaneous = get_list_of_simultaneous(data, number)
     print(len(simultaneous))
-    for i in range(len(simultaneous)):
-        print(simultaneous[i][0], simultaneous[i][1])
+    for item in simultaneous:
+        print(item[0], item[1])
     
 if __name__ == "__main__":
     main()
