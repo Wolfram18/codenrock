@@ -285,7 +285,28 @@ if __name__ == "__main__":
 
 ### Код (synchronization-satellites.py)
 ```python
+def get_list_of_simultaneous(data, number):
+    simultaneous = []
+    for i in range(number - 1):
+        for j in range(i, number):
+            if data[i][0] == data[j][0] and \
+            data[i][1] != data[j][1]:
+                simultaneous.append([i+1,j+1])
+    return simultaneous
 
+def main():
+    number = int(input())
+    data = []
+    for _ in range(number):
+        data.append(input().split())
+    data = [[int(item[0]), int(item[1])] for item in data]
+    simultaneous = get_list_of_simultaneous(data, number)
+    print(len(simultaneous))
+    for i in range(len(simultaneous)):
+        print(simultaneous[i][0], simultaneous[i][1])
+    
+if __name__ == "__main__":
+    main()
 ```
 
 ## Количество успешных запусков
