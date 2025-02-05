@@ -8,7 +8,7 @@
   <https://codenrock.com/contests/cosmic-code-2023/>
 - Халява, приди!  
   <https://codenrock.com/contests/halyava-pridi/>
-- Турнир по программированию Код Т1
+- Турнир по программированию Код Т1  
   <https://codenrock.com/contests/impuls-kodt1-minsk/>
-- Новогодний марафон по спортивному программированию
+- Новогодний марафон по спортивному программированию  
   <https://codenrock.com/contests/newyear25/>
